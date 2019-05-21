@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+                @import url('https://fonts.googleapis.com/css?family=Jua|Nanum+Gothic');
+                </style>
+                
+        <style>
+
+            body{
+                width: 1000px;
+                margin: 0 auto;
+                font-family: 'Nanum+Gothic', 'monospace';
+            }
+           nav img{
+               width: 600px;
+               height: 300px;
+               position: relative;
+               left: 200px;
+
+           }
+           p{
+               text-align: center;
+               color: rgb(70, 68, 68);
+               font-weight: bold;
+               font-size: 36px;
+
+           }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+
+           a{
+                position: relative;
+                display: block;
+                width: 300px;
+                height: 300px;
+           }
+           li{
+               text-align: center;
+               list-style: none;
+               display: inline-block;
+               margin: 5px;
+               line-height: 300px;
+            }
+            li:hover b{
+                    visibility: visible;
+            }
+            b{
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(43, 42, 42, 0.7);
+                width: 100%;
+                height: 100%;
+                color: white;
+                font-weight: bold;
+                size: 24px;
+                visibility: hidden;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="data:image/png;base64,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" alt="">
+        </nav>
+        <section>
+            <p>캐릭터상품 소개</p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://store.linefriends.co.kr/character/product/SALLY" target="_blank">
+                            <img src="https://lfstore-phinf.pstatic.net/MjAxODA3MThfMTgx/MDAxNTMxODg3MjgxNDM5.ZWR9BZLexdihYJRFCciKEAQJjLk32EbT-DfLfgs1ryIg.AYs7jfIi5HAwkSbU4o7nbZ4uw-R8T0GMIwAU0hHgSYog.PNG/image.png" alt="sally">
+                            <b>Go to Product SALLY</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://store.linefriends.co.kr/character/product/BROWN" target="_blank">
+                            <img src="https://lfstore-phinf.pstatic.net/MjAxODA3MThfMTM1/MDAxNTMxODgwOTYzNTk3.fZduqAEbSBE7908OwC-2TPWffYBtPyElJp214O1FrEkg.qDUs90uUPgjZ_C1NkNLF-6lEAe-W1-MdZNr25XsLSGgg.PNG/image.png" alt="brown">
+                            <b>Go to Product BROWN</b>
+                        </a>
+                    </li>                   
+                    <li>
+                        <a href="https://store.linefriends.co.kr/character/product/LEONARD">
+                            <img src="https://lfstore-phinf.pstatic.net/MjAxODA3MThfNTAg/MDAxNTMxODg3MTExMTE2.in8r7kE79bydiSTZ5sk_jLp_hdVLgN1E8x0t5i_CSywg.B5FF7_21P4eFWjeMmzQTLbpOus4JhJWz7xd8NEITFxEg.PNG/image.png" alt="leonard">
+                            <b>Go to Product LEONARD</b>
+                        </a>
+                    </li>                  
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>
