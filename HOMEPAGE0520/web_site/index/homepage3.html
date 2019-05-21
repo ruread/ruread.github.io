@@ -1,0 +1,455 @@
+<!docutype html>
+<html>
+    <head>
+       <meta charset="utf-8">
+        <meta name="veiwport" content="width=device=width,inital-scale=1.0"> 
+        <title></title>
+                     
+        <script type="text/javascript" src="../js/jquery.js"></script>
+                         
+                      
+        <style>
+            #container{
+                width: 1800px;
+                margin: 0 auto;
+                background-color: black;
+                color: white;
+                
+            }
+           
+            header{
+                display: inline-block;
+                width: 100%;
+                height: 311px;
+                
+            }
+            
+          
+            header>img{
+                margin-left: 78px;
+                margin-top: 80px;
+                float: left;
+            }
+            header>nav{
+                float: right;
+                margin-right: 211px;
+                margin-top: 76px;
+               
+            }
+            header>nav>ul>li{
+                 margin-right: 87px;
+            }
+            
+            
+            
+            
+            
+            
+            nav>ul>li>a{
+                text-decoration: none;
+                list-style-type: none;
+                color: white;
+                font-size:34px;
+                font-family: Franklin Gothic;
+                
+            }
+                   
+           nav>ul>li{
+                display: inline-block;
+                
+            }
+         
+    
+            
+            nav a:hover{
+                text-decoration: underline;
+            }
+           
+            
+            
+            #section{
+                width: 100%;
+            }
+            
+          
+            #article1{
+                margin-left:160px;
+                margin-bottom: 120px;
+            }
+            #article1>p{
+                margin-left:200px;
+                margin-top: 47px;
+            }
+            
+            #article1>p:nth-of-type(1){
+                font-size: 40px;
+                font-family: Elephant;
+                text-decoration: underline;
+            }
+            
+            #article1>p:nth-of-type(2){
+                font-size: 24px;
+                font-style: italic;
+                font-family: Elephant;
+            }
+ 
+            #article2{
+                width: 77.055%;
+                margin: 0 auto;
+                
+                
+            }    
+            
+            
+            #article2>div{
+                float: left;
+                width: 45%;
+                margin-left: 58px;
+                background-color: #0d0d0d;
+                box-sizing: border-box;
+                /*border: 10px solid #0d0d0d;*/
+                padding: 10px;
+                margin-top: 57px;
+            }
+            
+            #article2>div>a>img{
+                width: 100%;
+            }
+            
+            
+            
+            
+/*            ##########################################*/
+            
+            b{
+                font-size: 40px;
+                font-family: Elephant;
+                line-height: 300px;
+            }
+            
+            #a{
+                position: relative;
+            }
+            
+            .w{
+                position: absolute;
+                background-color: rgb(0,0,0,0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: none;
+                /*opacity: 0;*/
+            }
+            #a:hover .w{
+                  display: block;
+                /* opacity: 1;*/
+            }
+      
+            #b{
+                position: relative;
+            }
+            .w2{
+                
+                position: absolute;
+                background-color: rgb(0,0,0,0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: none;
+            }
+            #b:hover .w2{
+                display: block;
+            }
+            
+            #c{
+                position: relative;
+            }
+            .w3{
+                
+                position: absolute;
+                background-color: rgb(0,0,0,0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: none;
+            }
+        
+            #c:hover .w3{
+                display: block;
+            }
+ 
+            
+            
+            #d{
+                position: relative;
+            }
+            .w4{
+                
+                position: absolute;
+                background-color: rgb(0,0,0,0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: none;
+            }
+            #d:hover .w4{
+                display: block;
+            }
+ 
+            
+            #e{
+                position: relative;
+            }
+            .w5{
+                
+                position: absolute;
+                background-color: rgb(0,0,0,0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: none;
+            }
+            #e:hover .w5{
+                display: block;
+            }
+ 
+            #f{
+                position: relative;
+            }
+            .w6{
+                
+                position: absolute;
+                background-color: rgb(0,0,0,0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: none;
+            }
+            #f:hover .w6{
+                display: block;
+            }
+                 
+      
+/*  ###############################*/
+     
+            #article2>div>p:nth-of-type(odd){
+                text-decoration: underline;
+                font-family: Elephant;
+                font-size: 29px;
+               
+                
+            }
+            #article2>div>p:nth-of-type(even){
+                font-style: italic;
+                font-family: Elephant;
+                font-size: 21px;
+               
+            }
+            
+            #a, #b{
+                margin-top: 150px;
+            }
+        
+            #e, #f{
+                margin-bottom: 280px;
+            }
+            
+            
+            
+            
+            #top{
+                position: fixed;
+                right: 740px;
+                bottom: 200px;
+                width: 0px;
+                background-color: black;
+            }
+            
+/*    *************************************modal****************************        */
+            #modal{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0,0.8);
+                width: 100%;
+                height: 100%;
+            }
+            #popup{
+                width: 40%;
+                height: 90%;
+                margin: 100px auto;
+                overflow: scroll;
+                overflow-x: hidden; 
+                border: 1px solid black;
+                background-color: white;
+                    
+            }
+            
+            #container:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            
+            
+            
+/*            ***************************************************************/
+            
+            footer{
+                clear: both;
+                background-color: #0d0d0d;
+                width: 100%;
+                height: 130px;
+            }
+            #footer{
+                font-family: Elephant;
+                font-size: 21px;
+                text-align: center;
+                padding: 38px;
+                
+            }
+            
+             
+        </style>
+        
+    </head>
+
+    <body>
+         <div id="container">
+             <header>
+                <img src="../image/logo.jpg" alt="logo">
+                 <nav>
+                     <ul>
+                         <li><a href="#m1">Home</a></li>
+                         <li><a href="#m2">About</a></li>
+                         <li><a href="#m3">Portfolio</a></li>
+                         <li><a href="#m4">Contact</a></li>
+                     
+                     </ul>
+                 </nav>
+                 
+             </header>
+             
+             <section>
+                <article id="article1">
+                    <img src="../image/header1.png" alt="header1">
+                    <p>
+                        <strong>SONGPORTFOLIO about</strong>                        
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Nobis molestiae consectetur, <br>quibusdam doloremque alias quidem veniam laudantium.<br>
+                    </p>
+                    
+                </article>
+                 <article id="article2">
+                               
+                     <div id="a">
+                         <a href="#"><img src="../image/section1.jpg" alt="portfolio2"></a>
+                         <div class="w"><b>Hellow Stranger</b></div>
+                         <p>SONGHEEWON portfolio</p>
+                         <p>
+                             songheewon porfolio songheewon porfolio songheewon<br>
+                             songheewon porfolio songheewon porfolio songheewon 
+                         </p>
+                     </div>
+                     <div id="b">
+                         <a href="#"><img src="../image/section2.jpg" alt="portfolio2"></a>
+                         <div class="w2"><b>Hellow Stranger</b></div>
+                         <p>SONGHEEWON portfolio</p>
+                         <p>
+                             songheewon porfolio songheewon porfolio songheewon<br>
+                             songheewon porfolio songheewon porfolio songheewon 
+                         </p>
+                     </div>
+                     <div id="c">
+                         <a href="#"><img src="../image/section3.jpg" alt="portfolio3"></a>
+                         <div class="w3"><b>Hellow Stranger</b></div>
+                         <p>SONGHEEWON portfolio</p>
+                         <p>
+                             songheewon porfolio songheewon porfolio songheewon 
+                         </p>
+                    </div>     
+                    <div id="d">
+                         <a href="#"><img src="../image/section4.jpg" alt="portfolio4"></a>
+                         <div class="w4"><b>Hellow Stranger</b></div>
+                         <p>SONGHEEWON portfolio</p>
+                         <p>
+                             songheewon porfolio songheewon porfolio songheewon 
+                         </p>
+                    </div>     
+                    <div id="e">
+                         <a href="#"><img src="../image/section5.jpg" alt="portfolio5"></a>
+                         <div class="w5"><b>Hellow Stranger</b></div>
+                         <p>SONGHEEWON portfolio</p>
+                         <p>
+                             songheewon porfolio songheewon porfolio songheewon 
+                         </p>
+                     </div>    
+                     <div id="f">
+                         <a href="#"><img src="../image/section6.jpg" alt="portfolio6"></a>
+                         <div class="w6"><b>Hellow Stranger</b></div>
+                         <p>SONGHEEWON portfolio</p>
+                         <p>
+                             songheewon porfolio songheewon porfolio songheewon 
+                         </p>
+                         
+                     </div>
+                    <a href="#"><div id="top"><img src="../image/top.png"></div></a>
+                 </article>
+                 
+                 
+             </section>
+             
+             <footer>
+                 
+                 <div id="footer">
+                     
+                 email: ruread@naver.com<br>  
+                 Copyright 2019 by ssong
+                </div>
+             </footer>
+             
+             
+             
+             <div id="modal">
+                 <div id="popup">
+                     <img src="../image/modal1.jpg" alt="팝업이미지" id="img01">
+                     <img src="../image/close.png" alt="종료" id="close">
+                 </div>
+             </div>
+             
+                              
+             
+             
+         </div>
+         
+         
+         <script>
+        $(function(){
+        $('#modal #close').click (function(){
+        $('#modal').fadeOut();
+        });
+        $('#img01').click (function(){
+        $('#modal').fadeIn();
+        });
+        }
+        );
+                
+        
+        
+        </script>
+       
+    </body>
+</html>
