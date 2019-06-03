@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+/*
+    기본은 320px부터 시작한다.
+*/
+
+/* 공통적인 css를 기재합니다.*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Franklin Gothic Demi", "Franklin Gothic", sans-serif;
+
+}
+
+body{
+    background-color:#1c1d22;
+    color: #dddddd;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header{
+    width: 100%;
+}
+
+section article div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* header nav li{
+    cursor: pointer;
+} */
+
+
+
+header nav a{
+    text-decoration: none; 
+    color: #1c1d22; 
+
+    
+}
+header nav ul{
+    list-style-type: none; 
+    
+}
+header nav li{
+    background-color: #fda746;;
+    
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    height: 30px;
+}
+
+
+header #but{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+#banner img{
+    height: 50vh;
+    width: 100%;
+}
+
+/* ------------------------------- */
+h3{
+    font-family: "GyeonggiTitleV", serif; 
+    color: black;
+    font-size: 3em;
+    text-shadow: 0 0 5px #fda746;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h4{
+    font-family: "GyeonggiBatang", serif; 
+    font-size: 0.8em;
+    text-align: center;
+    color: #dddddd;
+}
+
+
+h5{
+    font-family: "NanumGothic", sans-serif;
+    font-size: 1.3em;
+    color: #dddddd;
+    text-align: center;
+    
+}
+
+
+
+
+
+#article3{
+    text-align: center;
+}
+
+/* 
+#about{
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#port{
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+} */
+
+
+
+
+
+/*
+    #f{
+    position: relative;
+}
+ .w6{
+    
+    position: absolute;
+    background-color: rgb(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+#f:hover .w6{
+    display: block;
+}
+*/
+
+
+
+
+
+
+
+
+#p1{
+    position: relative;
+    background-color: rgb(0,0,0,0.8);
+     top: -100px;
+
+    width: 30%;
+   height: 30%;
+  text-align: center;
+    color: white;
+   display: none;
+    
+}
+
+   #a:hover #p1{
+    display: block;
+    
+}
+
+
+footer{
+    background-color: #2b2c31;
+    height: 50px;
+    line-height: 50px;
+    clear: both;
+    color: #dddddd;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    
+    header h1{
+        float: left;
+        width: 30%;
+        
+    }
+    #banner img{
+        height: 50vh;}
+    
+    header nav{
+        float: right;
+        width: 60%;
+    }
+    
+    header nav li{
+        display: inline-block;
+        background-color: white;
+        padding: 20px;
+        border: none;
+    }
+    
+    header nav a{
+        color: black;
+    }
+    
+    #but{
+        display: none;
+    }
+    
+    header:active{
+        content: "";
+        display: block;
+        clear: both;
+    
+    }
+}
+/* --------------------------------*/
+
+/* *************************photo포트폴리오 */
+
+#photo{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#photo article{
+    width: 90%;
+}
+
+#photo #title1 div{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-imge: url('');
+    background-size: cover;
+}
+#photo #title1 p{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding-top: 45%;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+
+#photo #title1 div:hover p{
+    display: block;
+
+}
+
+
+#photo #title2 div{
+    width: 300px;
+    height: 300px;
+    
+}
+
+#photo #title2 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#photo #title2 p{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding-top: 45%;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@photo */
+
+
+
+
+/* -- media query 768 size--*/
+@media screen and (min-width:768px)
+{
+    #detail{
+        width: 90%;
+        display: flex;
+        flex-flow: row;
+    }
+    #detail div{
+        margin:0 30px;
+    }
+    #detail img{
+        width:50%;        
+    }
+}
+
+/* -- media query 1024 size--*/
+@media screen and (min-width:1024px){
+    #banner img{
+        height: 70vh;}
+    #photoo{
+        width: 90%;
+        max-width: 1300px;
+        display: flex;
+        flex-flow: row;
+
+    }
+    #photo article{
+        width: 30%;
+    }
+}
+
